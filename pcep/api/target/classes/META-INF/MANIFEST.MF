@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1478788123080
+Build-Jdk: 1.8.0_74
+Built-By: template
+Bundle-Description: ONOS Pcep client controller subsystem API
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: onos-pcep-controller-api
+Bundle-SymbolicName: org.onosproject.onos-pcep-controller-api
+Bundle-Version: 1.7.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: 
+ org.onosproject.pcep.controller;uses:="org.onlab.packet,org.onlab.util,
+ org.onosproject.incubator.net.tunnel,org.onosproject.pcepio.protocol";v
+ ersion="1.7.0",
+ org.onosproject.pcep.controller.driver;uses:="org.jboss.netty.channel,o
+ rg.onlab.packet,org.onosproject.pcep.controller,org.onosproject.pcepio.
+ protocol";version="1.7.0",
+ org.onosproject.pcepio.exceptions;version="1.7.0",
+ org.onosproject.pcepio.protocol;version="1.7.0";uses:="org.jboss.netty.
+ buffer,org.onosproject.pcepio.exceptions,org.onosproject.pcepio.types,o
+ rg.slf4j",
+ org.onosproject.pcepio.protocol.ver1;version="1.7.0";uses:="org.jboss.n
+ etty.buffer,org.onosproject.pcepio.exceptions,org.onosproject.pcepio.pr
+ otocol,org.onosproject.pcepio.types,org.slf4j",
+ org.onosproject.pcepio.types;version="1.7.0";uses:="org.apache.commons.
+ lang3.tuple,org.jboss.netty.buffer,org.onlab.util,org.onosproject.pcepi
+ o.exceptions,org.onosproject.pcepio.protocol,org.slf4j",
+ org.onosproject.pcepio.util;version="1.7.0";uses:="org.jboss.netty.buff
+ er,org.slf4j"
+Import-Package: 
+ com.google.common.base;version="[19.0,20)",
+ com.google.common.collect;version="[19.0,20)",
+ org.apache.commons.lang3.tuple;version="[3.4,4)",
+ org.jboss.netty.buffer;version="[3.10,4)",
+ org.jboss.netty.channel;version="[3.10,4)",
+ org.onlab.packet;version="[1.7,2)",
+ org.onlab.util;version="[1.7,2)",
+ org.onosproject.incubator.net.tunnel;version="[1.7,2)",
+ org.onosproject.pcep.controller,
+ org.onosproject.pcepio.exceptions;version="[1.7,2)",
+ org.onosproject.pcepio.protocol;version="[1.7,2)",
+ org.onosproject.pcepio.protocol.ver1;version="[1.7,2)",
+ org.onosproject.pcepio.types;version="[1.7,2)",
+ org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.0.0.201509101326
